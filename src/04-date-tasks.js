@@ -77,7 +77,9 @@ function isLeapYear(date) {
  */
 function timeSpanToString(startDate, endDate) {
   const date1 = new Date(endDate - startDate);
-  return date1.toISOString().slice(11, -1);
+  const x = date1.toISOString();
+  const res = x.slice(11, -1);
+  return res;
 }
 
 
